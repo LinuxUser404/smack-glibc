@@ -1,0 +1,597 @@
+res_send.o: res_send.c ../glibc-2.21/include/stdc-predef.h \
+ ../glibc-2.21/include/libc-symbols.h config.h \
+ ../glibc-2.21/sysdeps/generic/symbol-hacks.h \
+ ../glibc-2.21/include/assert.h ../glibc-2.21/assert/assert.h \
+ ../glibc-2.21/include/features.h ../glibc-2.21/include/sys/cdefs.h \
+ ../glibc-2.21/misc/sys/cdefs.h ../glibc-2.21/sysdeps/x86/bits/wordsize.h \
+ ../glibc-2.21/include/gnu/stubs.h ../glibc-2.21/include/sys/types.h \
+ ../glibc-2.21/posix/sys/types.h ../glibc-2.21/bits/types.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/x86/bits/typesizes.h \
+ ../glibc-2.21/include/time.h ../glibc-2.21/time/time.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/4.9.3/include/stddef.h \
+ ../glibc-2.21/include/endian.h ../glibc-2.21/string/endian.h \
+ ../glibc-2.21/sysdeps/x86/bits/endian.h \
+ ../glibc-2.21/sysdeps/x86/bits/byteswap.h \
+ ../glibc-2.21/sysdeps/x86/bits/byteswap-16.h \
+ ../glibc-2.21/include/sys/select.h ../glibc-2.21/misc/sys/select.h \
+ ../glibc-2.21/sysdeps/x86/bits/select.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/bits/sigset.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/bits/time.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/sys/sysmacros.h \
+ ../glibc-2.21/sysdeps/x86/bits/pthreadtypes.h \
+ ../glibc-2.21/include/sys/param.h ../glibc-2.21/misc/sys/param.h \
+ ../glibc-2.21/include/limits.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/4.9.3/include-fixed/limits.h \
+ ../glibc-2.21/include/bits/posix1_lim.h \
+ ../glibc-2.21/posix/bits/posix1_lim.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/bits/local_lim.h \
+ /usr/include/linux/limits.h ../glibc-2.21/include/bits/posix2_lim.h \
+ ../glibc-2.21/posix/bits/posix2_lim.h \
+ ../glibc-2.21/include/bits/xopen_lim.h /usr/include/bits/stdio_lim.h \
+ ../glibc-2.21/include/signal.h ../glibc-2.21/signal/signal.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/bits/signum.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/x86/bits/siginfo.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/bits/sigaction.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/x86/bits/sigcontext.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/bits/sigstack.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/x86/sys/ucontext.h \
+ ../glibc-2.21/sysdeps/pthread/bits/sigthread.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/bits/param.h \
+ /usr/include/linux/param.h /usr/include/asm/param.h \
+ /usr/include/asm-generic/param.h ../glibc-2.21/include/sys/time.h \
+ ../glibc-2.21/time/sys/time.h ../glibc-2.21/include/sys/socket.h \
+ ../glibc-2.21/socket/sys/socket.h ../glibc-2.21/include/sys/uio.h \
+ ../glibc-2.21/misc/sys/uio.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/bits/uio.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/bits/socket.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/bits/socket_type.h \
+ ../glibc-2.21/bits/sockaddr.h /usr/include/asm/socket.h \
+ /usr/include/asm-generic/socket.h /usr/include/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h ../glibc-2.21/include/sys/poll.h \
+ ../glibc-2.21/io/sys/poll.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/bits/poll.h \
+ ../glibc-2.21/include/netinet/in.h ../glibc-2.21/inet/netinet/in.h \
+ ../glibc-2.21/sysdeps/generic/stdint.h ../glibc-2.21/bits/wchar.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/bits/in.h \
+ ../glibc-2.21/include/arpa/nameser.h ../glibc-2.21/resolv/arpa/nameser.h \
+ ../glibc-2.21/include/sys/bitypes.h ../glibc-2.21/resolv/sys/bitypes.h \
+ ../glibc-2.21/include/arpa/nameser_compat.h \
+ ../glibc-2.21/resolv/arpa/nameser_compat.h \
+ ../glibc-2.21/include/string.h ../glibc-2.21/string/string.h \
+ ../glibc-2.21/include/xlocale.h ../glibc-2.21/locale/xlocale.h \
+ ../glibc-2.21/sysdeps/x86/bits/string.h \
+ ../glibc-2.21/include/bits/string2.h ../glibc-2.21/string/bits/string2.h \
+ ../glibc-2.21/include/stdlib.h ../glibc-2.21/stdlib/stdlib.h \
+ ../glibc-2.21/include/arpa/inet.h ../glibc-2.21/inet/arpa/inet.h \
+ ../glibc-2.21/include/sys/ioctl.h ../glibc-2.21/misc/sys/ioctl.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/bits/ioctls.h \
+ /usr/include/asm/ioctls.h /usr/include/asm-generic/ioctls.h \
+ /usr/include/linux/ioctl.h /usr/include/asm/ioctl.h \
+ /usr/include/asm-generic/ioctl.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/bits/ioctl-types.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/sys/ttydefaults.h \
+ ../glibc-2.21/include/errno.h ../glibc-2.21/stdlib/errno.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/bits/errno.h \
+ /usr/include/linux/errno.h /usr/include/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/dl-sysdep.h \
+ ../glibc-2.21/sysdeps/generic/dl-sysdep.h ../glibc-2.21/include/fcntl.h \
+ ../glibc-2.21/io/fcntl.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/x86/bits/fcntl.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/bits/fcntl-linux.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/x86/bits/stat.h \
+ ../glibc-2.21/include/netdb.h ../glibc-2.21/resolv/netdb.h \
+ ../glibc-2.21/include/rpc/netdb.h ../glibc-2.21/sunrpc/rpc/netdb.h \
+ ../glibc-2.21/bits/netdb.h ../glibc-2.21/inet/netgroup.h \
+ ../glibc-2.21/include/nsswitch.h ../glibc-2.21/nss/nsswitch.h \
+ ../glibc-2.21/include/nss.h ../glibc-2.21/nss/nss.h \
+ ../glibc-2.21/include/resolv.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/4.9.3/include/stdbool.h \
+ ../glibc-2.21/resolv/resolv.h ../glibc-2.21/include/stdio.h \
+ ../glibc-2.21/libio/stdio.h ../glibc-2.21/include/libio.h \
+ ../glibc-2.21/libio/libio.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/_G_config.h \
+ ../glibc-2.21/include/wchar.h ../glibc-2.21/wcsmbs/wchar.h \
+ ../glibc-2.21/include/gconv.h ../glibc-2.21/iconv/gconv.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/4.9.3/include/stdarg.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/bits/sys_errlist.h \
+ ../glibc-2.21/libio/bits/stdio.h ../glibc-2.21/include/search.h \
+ ../glibc-2.21/misc/search.h ../glibc-2.21/include/dlfcn.h \
+ ../glibc-2.21/dlfcn/dlfcn.h ../glibc-2.21/include/bits/dlfcn.h \
+ ../glibc-2.21/bits/dlfcn.h ../glibc-2.21/include/link.h \
+ ../glibc-2.21/elf/link.h ../glibc-2.21/include/elf.h \
+ ../glibc-2.21/elf/elf.h ../glibc-2.21/sysdeps/generic/dl-dtprocnum.h \
+ ../glibc-2.21/bits/elfclass.h ../glibc-2.21/sysdeps/x86/bits/link.h \
+ ../glibc-2.21/sysdeps/x86/bits/linkmap.h \
+ ../glibc-2.21/sysdeps/x86_64/dl-lookupcfg.h \
+ ../glibc-2.21/sysdeps/generic/dl-lookupcfg.h \
+ ../glibc-2.21/sysdeps/x86_64/nptl/tls.h /usr/include/asm/prctl.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/bits/waitflags.h \
+ ../glibc-2.21/bits/waitstatus.h ../glibc-2.21/include/alloca.h \
+ ../glibc-2.21/stdlib/alloca.h ../glibc-2.21/include/stackinfo.h \
+ ../glibc-2.21/sysdeps/x86_64/stackinfo.h \
+ ../glibc-2.21/sysdeps/pthread/allocalim.h \
+ ../glibc-2.21/bits/stdlib-bsearch.h \
+ ../glibc-2.21/include/bits/stdlib-float.h \
+ ../glibc-2.21/include/sys/stat.h ../glibc-2.21/io/sys/stat.h \
+ ../glibc-2.21/sysdeps/unix/x86_64/sysdep.h \
+ ../glibc-2.21/sysdeps/unix/sysdep.h \
+ ../glibc-2.21/sysdeps/generic/sysdep.h \
+ ../glibc-2.21/sysdeps/generic/dwarf2.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/sys/syscall.h \
+ /usr/include/asm/unistd.h /usr/include/asm/unistd_64.h \
+ ../glibc-2.21/sysdeps/x86_64/sysdep.h \
+ ../glibc-2.21/include/libc-internal.h \
+ ../glibc-2.21/sysdeps/x86_64/hp-timing.h \
+ ../glibc-2.21/sysdeps/generic/hp-timing-common.h \
+ ../glibc-2.21/sysdeps/generic/_itoa.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/kernel-features.h \
+ ../glibc-2.21/nptl/descr.h ../glibc-2.21/include/sched.h \
+ ../glibc-2.21/posix/sched.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/bits/sched.h \
+ ../glibc-2.21/include/setjmp.h ../glibc-2.21/setjmp/setjmp.h \
+ ../glibc-2.21/sysdeps/x86/bits/setjmp.h ../glibc-2.21/include/list.h \
+ ../glibc-2.21/sysdeps/nptl/lowlevellock.h ../glibc-2.21/include/atomic.h \
+ ../glibc-2.21/sysdeps/x86_64/bits/atomic.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/lowlevellock-futex.h \
+ ../glibc-2.21/sysdeps/x86_64/nptl/pthreaddef.h \
+ ../glibc-2.21/nptl/../nptl_db/thread_db.h \
+ ../glibc-2.21/include/pthread.h ../glibc-2.21/sysdeps/nptl/pthread.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/bits/timex.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/x86/sys/procfs.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/x86/sys/user.h \
+ ../glibc-2.21/sysdeps/generic/unwind.h \
+ ../glibc-2.21/sysdeps/nptl/bits/libc-lock.h \
+ ../glibc-2.21/sysdeps/nptl/bits/libc-lockP.h \
+ ../glibc-2.21/sysdeps/nptl/pthread-functions.h \
+ ../glibc-2.21/sysdeps/nptl/internaltypes.h ../glibc-2.21/nptl/pthreadP.h \
+ ../glibc-2.21/nptl/descr.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/nptl-signals.h \
+ ../glibc-2.21/nss/databases.def ../glibc-2.21/include/unistd.h \
+ ../glibc-2.21/posix/unistd.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/bits/posix_opt.h \
+ ../glibc-2.21/sysdeps/unix/sysv/linux/x86/bits/environments.h \
+ ../glibc-2.21/bits/confname.h ../glibc-2.21/include/getopt.h \
+ ../glibc-2.21/posix/getopt.h ../glibc-2.21/resolv/res_debug.h
+
+../glibc-2.21/include/stdc-predef.h:
+
+../glibc-2.21/include/libc-symbols.h:
+
+config.h:
+
+../glibc-2.21/sysdeps/generic/symbol-hacks.h:
+
+../glibc-2.21/include/assert.h:
+
+../glibc-2.21/assert/assert.h:
+
+../glibc-2.21/include/features.h:
+
+../glibc-2.21/include/sys/cdefs.h:
+
+../glibc-2.21/misc/sys/cdefs.h:
+
+../glibc-2.21/sysdeps/x86/bits/wordsize.h:
+
+../glibc-2.21/include/gnu/stubs.h:
+
+../glibc-2.21/include/sys/types.h:
+
+../glibc-2.21/posix/sys/types.h:
+
+../glibc-2.21/bits/types.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/x86/bits/typesizes.h:
+
+../glibc-2.21/include/time.h:
+
+../glibc-2.21/time/time.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/4.9.3/include/stddef.h:
+
+../glibc-2.21/include/endian.h:
+
+../glibc-2.21/string/endian.h:
+
+../glibc-2.21/sysdeps/x86/bits/endian.h:
+
+../glibc-2.21/sysdeps/x86/bits/byteswap.h:
+
+../glibc-2.21/sysdeps/x86/bits/byteswap-16.h:
+
+../glibc-2.21/include/sys/select.h:
+
+../glibc-2.21/misc/sys/select.h:
+
+../glibc-2.21/sysdeps/x86/bits/select.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/bits/sigset.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/bits/time.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/sys/sysmacros.h:
+
+../glibc-2.21/sysdeps/x86/bits/pthreadtypes.h:
+
+../glibc-2.21/include/sys/param.h:
+
+../glibc-2.21/misc/sys/param.h:
+
+../glibc-2.21/include/limits.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/4.9.3/include-fixed/limits.h:
+
+../glibc-2.21/include/bits/posix1_lim.h:
+
+../glibc-2.21/posix/bits/posix1_lim.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+../glibc-2.21/include/bits/posix2_lim.h:
+
+../glibc-2.21/posix/bits/posix2_lim.h:
+
+../glibc-2.21/include/bits/xopen_lim.h:
+
+/usr/include/bits/stdio_lim.h:
+
+../glibc-2.21/include/signal.h:
+
+../glibc-2.21/signal/signal.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/bits/signum.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/x86/bits/siginfo.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/bits/sigaction.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/x86/bits/sigcontext.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/bits/sigstack.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/x86/sys/ucontext.h:
+
+../glibc-2.21/sysdeps/pthread/bits/sigthread.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/bits/param.h:
+
+/usr/include/linux/param.h:
+
+/usr/include/asm/param.h:
+
+/usr/include/asm-generic/param.h:
+
+../glibc-2.21/include/sys/time.h:
+
+../glibc-2.21/time/sys/time.h:
+
+../glibc-2.21/include/sys/socket.h:
+
+../glibc-2.21/socket/sys/socket.h:
+
+../glibc-2.21/include/sys/uio.h:
+
+../glibc-2.21/misc/sys/uio.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/bits/uio.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/bits/socket.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/bits/socket_type.h:
+
+../glibc-2.21/bits/sockaddr.h:
+
+/usr/include/asm/socket.h:
+
+/usr/include/asm-generic/socket.h:
+
+/usr/include/asm/sockios.h:
+
+/usr/include/asm-generic/sockios.h:
+
+../glibc-2.21/include/sys/poll.h:
+
+../glibc-2.21/io/sys/poll.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/bits/poll.h:
+
+../glibc-2.21/include/netinet/in.h:
+
+../glibc-2.21/inet/netinet/in.h:
+
+../glibc-2.21/sysdeps/generic/stdint.h:
+
+../glibc-2.21/bits/wchar.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/bits/in.h:
+
+../glibc-2.21/include/arpa/nameser.h:
+
+../glibc-2.21/resolv/arpa/nameser.h:
+
+../glibc-2.21/include/sys/bitypes.h:
+
+../glibc-2.21/resolv/sys/bitypes.h:
+
+../glibc-2.21/include/arpa/nameser_compat.h:
+
+../glibc-2.21/resolv/arpa/nameser_compat.h:
+
+../glibc-2.21/include/string.h:
+
+../glibc-2.21/string/string.h:
+
+../glibc-2.21/include/xlocale.h:
+
+../glibc-2.21/locale/xlocale.h:
+
+../glibc-2.21/sysdeps/x86/bits/string.h:
+
+../glibc-2.21/include/bits/string2.h:
+
+../glibc-2.21/string/bits/string2.h:
+
+../glibc-2.21/include/stdlib.h:
+
+../glibc-2.21/stdlib/stdlib.h:
+
+../glibc-2.21/include/arpa/inet.h:
+
+../glibc-2.21/inet/arpa/inet.h:
+
+../glibc-2.21/include/sys/ioctl.h:
+
+../glibc-2.21/misc/sys/ioctl.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/bits/ioctls.h:
+
+/usr/include/asm/ioctls.h:
+
+/usr/include/asm-generic/ioctls.h:
+
+/usr/include/linux/ioctl.h:
+
+/usr/include/asm/ioctl.h:
+
+/usr/include/asm-generic/ioctl.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/bits/ioctl-types.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/sys/ttydefaults.h:
+
+../glibc-2.21/include/errno.h:
+
+../glibc-2.21/stdlib/errno.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/bits/errno.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/dl-sysdep.h:
+
+../glibc-2.21/sysdeps/generic/dl-sysdep.h:
+
+../glibc-2.21/include/fcntl.h:
+
+../glibc-2.21/io/fcntl.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/x86/bits/fcntl.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/bits/fcntl-linux.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/x86/bits/stat.h:
+
+../glibc-2.21/include/netdb.h:
+
+../glibc-2.21/resolv/netdb.h:
+
+../glibc-2.21/include/rpc/netdb.h:
+
+../glibc-2.21/sunrpc/rpc/netdb.h:
+
+../glibc-2.21/bits/netdb.h:
+
+../glibc-2.21/inet/netgroup.h:
+
+../glibc-2.21/include/nsswitch.h:
+
+../glibc-2.21/nss/nsswitch.h:
+
+../glibc-2.21/include/nss.h:
+
+../glibc-2.21/nss/nss.h:
+
+../glibc-2.21/include/resolv.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/4.9.3/include/stdbool.h:
+
+../glibc-2.21/resolv/resolv.h:
+
+../glibc-2.21/include/stdio.h:
+
+../glibc-2.21/libio/stdio.h:
+
+../glibc-2.21/include/libio.h:
+
+../glibc-2.21/libio/libio.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/_G_config.h:
+
+../glibc-2.21/include/wchar.h:
+
+../glibc-2.21/wcsmbs/wchar.h:
+
+../glibc-2.21/include/gconv.h:
+
+../glibc-2.21/iconv/gconv.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/4.9.3/include/stdarg.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/bits/sys_errlist.h:
+
+../glibc-2.21/libio/bits/stdio.h:
+
+../glibc-2.21/include/search.h:
+
+../glibc-2.21/misc/search.h:
+
+../glibc-2.21/include/dlfcn.h:
+
+../glibc-2.21/dlfcn/dlfcn.h:
+
+../glibc-2.21/include/bits/dlfcn.h:
+
+../glibc-2.21/bits/dlfcn.h:
+
+../glibc-2.21/include/link.h:
+
+../glibc-2.21/elf/link.h:
+
+../glibc-2.21/include/elf.h:
+
+../glibc-2.21/elf/elf.h:
+
+../glibc-2.21/sysdeps/generic/dl-dtprocnum.h:
+
+../glibc-2.21/bits/elfclass.h:
+
+../glibc-2.21/sysdeps/x86/bits/link.h:
+
+../glibc-2.21/sysdeps/x86/bits/linkmap.h:
+
+../glibc-2.21/sysdeps/x86_64/dl-lookupcfg.h:
+
+../glibc-2.21/sysdeps/generic/dl-lookupcfg.h:
+
+../glibc-2.21/sysdeps/x86_64/nptl/tls.h:
+
+/usr/include/asm/prctl.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/bits/waitflags.h:
+
+../glibc-2.21/bits/waitstatus.h:
+
+../glibc-2.21/include/alloca.h:
+
+../glibc-2.21/stdlib/alloca.h:
+
+../glibc-2.21/include/stackinfo.h:
+
+../glibc-2.21/sysdeps/x86_64/stackinfo.h:
+
+../glibc-2.21/sysdeps/pthread/allocalim.h:
+
+../glibc-2.21/bits/stdlib-bsearch.h:
+
+../glibc-2.21/include/bits/stdlib-float.h:
+
+../glibc-2.21/include/sys/stat.h:
+
+../glibc-2.21/io/sys/stat.h:
+
+../glibc-2.21/sysdeps/unix/x86_64/sysdep.h:
+
+../glibc-2.21/sysdeps/unix/sysdep.h:
+
+../glibc-2.21/sysdeps/generic/sysdep.h:
+
+../glibc-2.21/sysdeps/generic/dwarf2.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/sys/syscall.h:
+
+/usr/include/asm/unistd.h:
+
+/usr/include/asm/unistd_64.h:
+
+../glibc-2.21/sysdeps/x86_64/sysdep.h:
+
+../glibc-2.21/include/libc-internal.h:
+
+../glibc-2.21/sysdeps/x86_64/hp-timing.h:
+
+../glibc-2.21/sysdeps/generic/hp-timing-common.h:
+
+../glibc-2.21/sysdeps/generic/_itoa.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/kernel-features.h:
+
+../glibc-2.21/nptl/descr.h:
+
+../glibc-2.21/include/sched.h:
+
+../glibc-2.21/posix/sched.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/bits/sched.h:
+
+../glibc-2.21/include/setjmp.h:
+
+../glibc-2.21/setjmp/setjmp.h:
+
+../glibc-2.21/sysdeps/x86/bits/setjmp.h:
+
+../glibc-2.21/include/list.h:
+
+../glibc-2.21/sysdeps/nptl/lowlevellock.h:
+
+../glibc-2.21/include/atomic.h:
+
+../glibc-2.21/sysdeps/x86_64/bits/atomic.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/lowlevellock-futex.h:
+
+../glibc-2.21/sysdeps/x86_64/nptl/pthreaddef.h:
+
+../glibc-2.21/nptl/../nptl_db/thread_db.h:
+
+../glibc-2.21/include/pthread.h:
+
+../glibc-2.21/sysdeps/nptl/pthread.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/bits/timex.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/x86/sys/procfs.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/x86/sys/user.h:
+
+../glibc-2.21/sysdeps/generic/unwind.h:
+
+../glibc-2.21/sysdeps/nptl/bits/libc-lock.h:
+
+../glibc-2.21/sysdeps/nptl/bits/libc-lockP.h:
+
+../glibc-2.21/sysdeps/nptl/pthread-functions.h:
+
+../glibc-2.21/sysdeps/nptl/internaltypes.h:
+
+../glibc-2.21/nptl/pthreadP.h:
+
+../glibc-2.21/nptl/descr.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/nptl-signals.h:
+
+../glibc-2.21/nss/databases.def:
+
+../glibc-2.21/include/unistd.h:
+
+../glibc-2.21/posix/unistd.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/bits/posix_opt.h:
+
+../glibc-2.21/sysdeps/unix/sysv/linux/x86/bits/environments.h:
+
+../glibc-2.21/bits/confname.h:
+
+../glibc-2.21/include/getopt.h:
+
+../glibc-2.21/posix/getopt.h:
+
+../glibc-2.21/resolv/res_debug.h:
